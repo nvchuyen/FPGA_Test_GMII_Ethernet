@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Jan  6 21:41:19 2019
+# Process ID: 1144
+# Current directory: E:/Xilinx/Artix-7/Workspace-DDR3-DB2/Test08_GMII_Ethernet
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2448 E:\Xilinx\Artix-7\Workspace-DDR3-DB2\Test08_GMII_Ethernet\project_1.xpr
+# Log file: E:/Xilinx/Artix-7/Workspace-DDR3-DB2/Test08_GMII_Ethernet/vivado.log
+# Journal file: E:/Xilinx/Artix-7/Workspace-DDR3-DB2/Test08_GMII_Ethernet\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Xilinx/Artix-7/Workspace-DDR3-DB2/Test08_GMII_Ethernet/project_1.xpr
+INFO: [Project 1-313] Project file moved from 'E:/Xilinx/Artix-7/Workspace-DDR3-DB2/Test08GMII_Ethernet/project_1' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 806.629 ; gain = 143.016
+add_files -norecurse {E:/Xilinx/Artix-7/Workspace-DDR3-DB2/Test08_GMII_Ethernet/project_1.srcs/crc.v E:/Xilinx/Artix-7/Workspace-DDR3-DB2/Test08_GMII_Ethernet/project_1.srcs/mdio_com.v E:/Xilinx/Artix-7/Workspace-DDR3-DB2/Test08_GMII_Ethernet/project_1.srcs/iprecieve.v E:/Xilinx/Artix-7/Workspace-DDR3-DB2/Test08_GMII_Ethernet/project_1.srcs/ethernet_test.v E:/Xilinx/Artix-7/Workspace-DDR3-DB2/Test08_GMII_Ethernet/project_1.srcs/udp.v E:/Xilinx/Artix-7/Workspace-DDR3-DB2/Test08_GMII_Ethernet/project_1.srcs/ipsend.v E:/Xilinx/Artix-7/Workspace-DDR3-DB2/Test08_GMII_Ethernet/project_1.srcs/data_num.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files E:/Xilinx/Artix-7/Workspace-DDR3-DB2/Test08_GMII_Ethernet/project_1.srcs/data_num.v] -no_script -reset -force -quiet
+remove_files  E:/Xilinx/Artix-7/Workspace-DDR3-DB2/Test08_GMII_Ethernet/project_1.srcs/data_num.v
+export_ip_user_files -of_objects  [get_files E:/Xilinx/Artix-7/Workspace-DDR3-DB2/Test08_GMII_Ethernet/project_1.srcs/mdio_com.v] -no_script -reset -force -quiet
+remove_files  E:/Xilinx/Artix-7/Workspace-DDR3-DB2/Test08_GMII_Ethernet/project_1.srcs/mdio_com.v
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jan  6 21:43:51 2019...

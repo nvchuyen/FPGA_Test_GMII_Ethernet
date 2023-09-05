@@ -1,0 +1,110 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sun Jan  6 22:25:40 2019
+| Host         : evelovely running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file ethernet_test_control_sets_placed.rpt
+| Design       : ethernet_test
+| Device       : xc7a35t
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    42 |
+| Unused register locations in slices containing registers |    62 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            3 |
+|      8 |            3 |
+|     10 |            3 |
+|     14 |            1 |
+|    16+ |           32 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              38 |           14 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |             558 |          103 |
+| Yes          | No                    | Yes                    |              64 |           12 |
+| Yes          | Yes                   | No                     |             350 |           60 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------+---------------------------------------------------------------------------------------------+--------------------------------------------+------------------+----------------+
+|    Clock Signal   |                                        Enable Signal                                        |              Set/Reset Signal              | Slice Load Count | Bel Load Count |
++-------------------+---------------------------------------------------------------------------------------------+--------------------------------------------+------------------+----------------+
+| ~e_gtxc_OBUF_BUFG | u1/ipsend_inst/txen_i_1_n_0                                                                 |                                            |                1 |              2 |
+| ~e_gtxc_OBUF_BUFG | u1/ipsend_inst/txer_i_1_n_0                                                                 |                                            |                1 |              2 |
+| ~e_gtxc_OBUF_BUFG | reset_n_IBUF                                                                                | ram_wren_i_i_1_n_0                         |                1 |              2 |
+|  e_gtxc_OBUF_BUFG | u1/iprecieve_inst/mydata[6]_i_1_n_0                                                         |                                            |                3 |              8 |
+| ~e_gtxc_OBUF_BUFG | u1/ipsend_inst/check_buffer[23]                                                             |                                            |                2 |              8 |
+|  e_gtxc_OBUF_BUFG | u1/iprecieve_inst/FSM_sequential_rx_state[3]_i_2_n_0                                        | u1/iprecieve_inst/SR[0]                    |                3 |              8 |
+|  e_gtxc_OBUF_BUFG |                                                                                             |                                            |                4 |             10 |
+| ~e_gtxc_OBUF_BUFG | u1/ipsend_inst/j                                                                            |                                            |                2 |             10 |
+|  e_gtxc_OBUF_BUFG | u1/iprecieve_inst/state_counter[4]_i_1_n_0                                                  |                                            |                4 |             10 |
+| ~e_gtxc_OBUF_BUFG | u1/ipsend_inst/ram_rd_addr[8]_i_1_n_0                                                       | u1/ipsend_inst/tx_data_counter[15]_i_1_n_0 |                2 |             14 |
+| ~e_gtxc_OBUF_BUFG | u1/ipsend_inst/dataout[7]_i_1_n_0                                                           |                                            |                7 |             16 |
+| ~e_gtxc_OBUF_BUFG | u1/ipsend_inst/dataout[7]_i_1_n_0                                                           | u1/ipsend_inst/dataout[6]_i_1_n_0          |                8 |             16 |
+|  e_gtxc_OBUF_BUFG | u1/iprecieve_inst/data_o[31]_i_1_n_0                                                        | u1/iprecieve_inst/data_o[7]_i_1_n_0        |                2 |             16 |
+|  e_gtxc_OBUF_BUFG | u1/iprecieve_inst/ram_wr_addr[8]_i_2_n_0                                                    | u1/iprecieve_inst/ram_wr_addr[8]_i_1_n_0   |                3 |             16 |
+| ~e_gtxc_OBUF_BUFG | u1/ipsend_inst/i[4]_i_1__0_n_0                                                              |                                            |                3 |             18 |
+| ~e_gtxc_OBUF_BUFG | u1/ipsend_inst/ip_header[6][31]_i_1_n_0                                                     | u1/ipsend_inst/ip_header[0][15]_i_1_n_0    |                5 |             28 |
+| ~e_gtxc_OBUF_BUFG |                                                                                             |                                            |               10 |             28 |
+| ~e_gtxc_OBUF_BUFG | u1/ipsend_inst/check_buffer[7]                                                              |                                            |                4 |             32 |
+|  e_gtxc_OBUF_BUFG | u1/iprecieve_inst/IP_layer[143]_i_1_n_0                                                     |                                            |                3 |             32 |
+|  e_gtxc_OBUF_BUFG | u1/iprecieve_inst/rx_data_length[15]_i_1_n_0                                                |                                            |                4 |             32 |
+|  e_gtxc_OBUF_BUFG | u1/iprecieve_inst/rx_total_length[15]_i_1_n_0                                               |                                            |                5 |             32 |
+|  e_gtxc_OBUF_BUFG | u1/iprecieve_inst/data_counter[15]_i_2_n_0                                                  | u1/iprecieve_inst/data_counter[15]_i_1_n_0 |                5 |             32 |
+| ~e_gtxc_OBUF_BUFG | u1/ipsend_inst/ip_header[2][15]_i_2_n_0                                                     | u1/ipsend_inst/ip_header[2][15]_i_1_n_0    |                7 |             32 |
+| ~e_gtxc_OBUF_BUFG | u1/ipsend_inst/tx_data_counter[15]_i_2_n_0                                                  | u1/ipsend_inst/tx_data_counter[15]_i_1_n_0 |                5 |             32 |
+|  e_gtxc_OBUF_BUFG | u1/iprecieve_inst/mydata[6]_i_1_n_0                                                         | u1/iprecieve_inst/mydata[23]_i_1_n_0       |                5 |             40 |
+|  e_gtxc_OBUF_BUFG | u1/iprecieve_inst/data_o[31]_i_1_n_0                                                        |                                            |               12 |             48 |
+|  e_gtxc_OBUF_BUFG | u1/iprecieve_inst/myUDP_layer[23]_i_1_n_0                                                   |                                            |                9 |             48 |
+|  e_gtxc_OBUF_BUFG | u1/iprecieve_inst/myIP_layer[135]_i_1_n_0                                                   |                                            |                3 |             48 |
+| ~e_gtxc_OBUF_BUFG | i                                                                                           | u1/iprecieve_inst/SR[0]                    |                6 |             52 |
+| ~e_gtxc_OBUF_BUFG | u1/ipsend_inst/time_counter[31]_i_2_n_0                                                     | u1/ipsend_inst/time_counter[31]_i_1_n_0    |                8 |             62 |
+|  e_gtxc_OBUF_BUFG | u1/ipsend_inst/E[0]                                                                         | u1/ipsend_inst/AS[0]                       |               12 |             64 |
+| ~e_gtxc_OBUF_BUFG | u1/ipsend_inst/datain_reg                                                                   |                                            |               21 |             64 |
+| ~e_gtxc_OBUF_BUFG | u1/ipsend_inst/ip_header[6][31]_i_1_n_0                                                     |                                            |               10 |             68 |
+|  e_gtxc_OBUF_BUFG | ram_inst/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_0_63_0_2_i_1_n_0    |                                            |               11 |             88 |
+|  e_gtxc_OBUF_BUFG | ram_inst/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_256_319_0_2_i_1_n_0 |                                            |               11 |             88 |
+|  e_gtxc_OBUF_BUFG | ram_inst/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_64_127_0_2_i_1_n_0  |                                            |               11 |             88 |
+|  e_gtxc_OBUF_BUFG | ram_inst/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_384_447_0_2_i_1_n_0 |                                            |               11 |             88 |
+|  e_gtxc_OBUF_BUFG | ram_inst/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_448_511_0_2_i_1_n_0 |                                            |               11 |             88 |
+|  e_gtxc_OBUF_BUFG | ram_inst/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_320_383_0_2_i_1_n_0 |                                            |               11 |             88 |
+|  e_gtxc_OBUF_BUFG | ram_inst/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_128_191_0_2_i_1_n_0 |                                            |               11 |             88 |
+|  e_gtxc_OBUF_BUFG | ram_inst/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_192_255_0_2_i_1_n_0 |                                            |               11 |             88 |
+|  e_gtxc_OBUF_BUFG | u1/iprecieve_inst/mymac[87]_i_1_n_0                                                         |                                            |               11 |            112 |
++-------------------+---------------------------------------------------------------------------------------------+--------------------------------------------+------------------+----------------+
+
+

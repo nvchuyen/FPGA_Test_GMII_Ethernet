@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Jan  6 22:24:02 2019
+# Process ID: 12292
+# Current directory: E:/Xilinx/Artix-7/Workspace-DDR3-DB2/Test08_GMII_Ethernet/project_1.runs/synth_1
+# Command line: vivado.exe -log ethernet_test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ethernet_test.tcl
+# Log file: E:/Xilinx/Artix-7/Workspace-DDR3-DB2/Test08_GMII_Ethernet/project_1.runs/synth_1/ethernet_test.vds
+# Journal file: E:/Xilinx/Artix-7/Workspace-DDR3-DB2/Test08_GMII_Ethernet/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ethernet_test.tcl -notrace
